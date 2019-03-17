@@ -17,11 +17,13 @@ const AccountSchema = new Schema({
   password: {
     type: String
   },
-  channels: {
-    type: [{
-      channelId: ObjectId,
-      roleId: ObjectId
-    }]
+  role: {
+    type: ObjectId,
+    ref: 'Role'
+  },
+  channel: {
+    type: [ObjectId],
+    ref: 'Channel'
   },
   status: {
     type: Number //处理锁定或禁用状态等
@@ -31,4 +33,4 @@ const AccountSchema = new Schema({
   timestamps: {}
 });
 
-module.exports = mongoose.model('account', AccountSchema);
+module.exports = mongoose.model('Account', AccountSchema);

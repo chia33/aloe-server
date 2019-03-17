@@ -2,8 +2,8 @@
 
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
-const ChannelSchema = new Schema({
+//权限列表
+const AuthoritySchema = new Schema({
   name: {
     type: String,
     required: true
@@ -13,4 +13,4 @@ const ChannelSchema = new Schema({
   timestamps: {}
 });
 
-module.exports = mongoose.model('Channel', ChannelSchema);
+module.exports = mongoose.model('Authority', AuthoritySchema);

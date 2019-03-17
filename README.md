@@ -10,7 +10,7 @@ ALOE-SERVER
 * 主动添加账户
 * 用户权限管理
 * cookie
-* channel.xxx.com/a/b/c channel:频道 a:固定特别前缀 b:页面名称 c:前端路由
+* channel.xxx.com/a/b/c channel:频道 a:固定特别前缀方便扩展 b:页面名称 c:前端路由
 
 
 
@@ -18,6 +18,9 @@ ALOE-SERVER
 ### 数据库表设计
 * 账户表
 * 权限表
+* 角色表
+* 频道表
+* 专题表
 
 
 
